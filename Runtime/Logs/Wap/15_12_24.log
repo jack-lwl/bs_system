@@ -1,0 +1,9 @@
+[ 2015-12-24T10:09:59+08:00 ] ::1 /Qh_tpc/index.php/Wap/User/setPassword
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010943s ]
+

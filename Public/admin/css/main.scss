@@ -1,0 +1,314 @@
+@import 'common.scss';
+
+#modal-newbranch, #modal-setting, #modal-toggle{
+	table{
+		tr{
+			height: 37px;
+		}
+		td{
+			position: relative;
+		}	
+		.btn-clear{
+			position: absolute;
+			right: -90px;
+			top: 0;
+		}
+	}
+}
+#modal-setting{
+	.modal-dialog{
+		width: 420px!important;
+	}
+	.input-num{
+		width: 60px;
+	}
+	.ques{
+		label{
+			width: 45%;
+		}
+		label:first-child{
+			margin-right: 10px;
+		}
+		input{
+			display: inline-block;
+		}
+	}
+}
+#modal-newbranch .modal-dialog{
+	width: 400px!important;
+}
+#modal-detail{
+	.table-user{
+		width: 28%;
+	}
+	.table-exam{
+		width: 70%;
+	}
+}
+#modal-toggle{
+	table{
+		width: 80%;
+		td{
+			vertical-align: top;
+		}
+	}
+}
+#modal-resetpass{
+	p{
+		text-align: center;
+	}
+	p:first-child{
+		font-size: 20px;
+	}
+}
+#modal-newexam{
+	textarea{
+		width: 570px;
+		height: 140px;
+	}
+	.btnbox{
+		margin-top: 10px;
+		label{
+			font-weight: normal;
+			margin-right: 15px;
+			input{
+				margin-right: 10px;
+			}
+		}
+	}
+	.ansbox{
+		padding-left: 20px;
+		margin-top: 10px;
+		p{
+			margin-bottom: 0;
+		}
+		label{
+			width: 100%;
+			font-weight: normal;
+			input{
+				margin-right: 10px;
+			}
+			input[type="text"]{
+				display: inline;
+				width: 86%;
+			}
+			.del{
+				font-size: 20px;
+				position: relative;
+				top: 3px;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+.main{
+	.infobar{
+		border-bottom: 1px solid $border-gray;
+		font-size: 16px;
+		line-height: 24px;
+		padding: 9px 10px;
+		span{
+			margin-right: 20px;
+		}
+	}
+	.btn-box{
+		margin: 10px 0;
+		.btn-newbranch{
+			padding: 6px 30px;
+		}
+	}
+	.infobar-sub{
+		text-align: center;
+		margin: 10px 0;
+		font-size: 18px;
+		padding: 9px 0;
+		color: #333!important;
+		.dot{
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			background: #d9534f;
+			margin-right: 10px;
+			position: relative;
+			top: 2px;
+		}
+		.dot-open{
+			background: #5cb85c;
+		}
+		.infobar-detail{
+			padding: 0 10px;
+			text-align: left;
+			font-size: 14px;
+			color: #333!important;
+		}
+	}
+}
+.main-branch{
+	.infobar{
+		color: #999;
+	}
+}
+.main{
+	.chapter-list{
+		border-right: 1px solid $border-gray;
+		position: fixed;
+	    top: 70px;
+	    bottom: 0;
+	    z-index: 1000;
+	    display: block;
+	    overflow-x: hidden;
+	    overflow-y: auto;
+	    background-color: #fff;
+	    width: 250px;
+		ul{
+			list-style: none;
+			padding-left: 0;
+			li{
+				line-height: 25px;
+			}
+			a{
+				color: #333;
+				&:hover{
+					color: $bank-blue;
+				}
+			}
+			a.active{
+				color: $bank-blue;
+				font-weight: bold;
+			}
+		}
+		.list-zero{
+			font-size: 18px;
+			font-weight: bold;
+			>li{
+				margin-bottom: 10px;
+			}
+		}
+		.list-one{
+			padding-left: 18px;
+			font-size: 16px;
+			font-weight: bold;
+			>li{
+				margin-bottom: 10px;
+			}
+		}
+		.list-two, .list-three{
+			font-size: 14px;
+			font-weight: normal;
+		}
+		.list-three{
+			padding-left: 20px;
+		}
+	}
+	.chapter-cont{
+		margin-left: 290px;
+		h2{
+			text-align: center;
+			font-size: 22px;
+		}
+		h3{
+			text-align: center;
+			font-size: 16px;
+		}
+		p{
+			text-indent: 2em;
+		}
+	}
+	.chapter-cont-editor, .btn-save{
+		display: none;
+	}
+	.ke-container{
+		width: 100%!important;
+		margin-top: 20px!important;
+	}
+	.chanter-cont-info{
+		border-bottom: 1px solid $border-gray;
+		.chapter-num{
+			font-weight: bold;
+		}
+		.chapter-info{
+			p:first-child{
+				span{
+					margin-right: 20px;
+				}
+			}
+			.tip{
+				margin-left: 20px;
+			}
+		}
+	}
+}
+.main-examlist{
+	.chapter-list{
+		.list-one{
+			font-weight: normal;
+		}
+	}
+	.table-examlist{
+		tr a:first-child{
+			margin-right: 8px;
+		}
+	}
+}
+.main-appsetting{
+	.form-study{
+		margin-bottom: 20px;
+	}
+	.uploadbox{
+		margin: 10px 0;
+		.ui-upload{
+			margin-right: 20px;
+		}
+	}
+}
+//图片上传组件upload
+.ui-upload{
+	width: 200px;
+	height: 110px;
+	border: 1px solid #b2b2b2;
+	background: #f5f5f5;
+	text-align: center;
+	line-height: 110px;
+	position: relative;
+	float: left;
+}
+.ui-upload input{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 100;
+}
+.ui-upload-progress{
+	z-index: 50;
+    position: absolute;
+    height: 16px;
+    left: 50%;
+    top: 50%;
+    margin-top: -8px;
+    width: 80px;
+    margin-left: -40px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+}
+.ui-upload-progress span{
+	background: #333;
+    background: linear-gradient(to bottom, #666, #444);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    -webkit-transition: width 300ms ease-in-out;
+    -moz-transition: width 300ms ease-in-out;
+    -ms-transition: width 300ms ease-in-out;
+    -o-transition: width 300ms ease-in-out;
+    transition: width 300ms ease-in-out;
+}

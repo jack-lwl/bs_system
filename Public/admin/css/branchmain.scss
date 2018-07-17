@@ -1,0 +1,43 @@
+@import 'common.scss';
+
+.main{
+	.infobar{
+		border-bottom: 1px solid $border-gray;
+		font-size: 16px;
+		line-height: 24px;
+		padding: 9px 10px;
+		span{
+			margin-right: 20px;
+		}
+	}
+}
+#modal-modifypass{
+	table{
+		tr{
+			height: 37px;
+		}
+	}
+}
+#modal-modifypass{
+	.modal-dialog{
+		width: 340px;
+	}
+}
+#modal-bdetail{
+	.modal-dialog{
+		width: 1020px;
+	}
+	.table-user{
+		width: 49%;
+		select{
+			display: inline-block;
+			width: 48%;
+		}
+	}
+	.table-exam{
+		width: 50%;
+	}
+	.btn-pass{
+		margin: 0 10px 0 20px;
+	}
+}

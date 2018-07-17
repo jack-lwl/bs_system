@@ -1,0 +1,429 @@
+body {
+  padding-top: 50px;
+}
+
+.btn {
+  padding: 6px 25px;
+}
+
+label {
+  font-weight: normal;
+}
+
+.txt-red {
+  color: #a71e32;
+}
+
+.ui-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+.ui-scrollbar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px transparent;
+}
+
+.ui-scrollbar::-webkit-scrollbar-track:hover {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.ui-scrollbar::-webkit-scrollbar-track:active {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.ui-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ui-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ui-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ui-scrollbar::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-fixed-top {
+  border: 0;
+}
+
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    border-right: 1px solid #ddd;
+  }
+}
+.nav-sidebar {
+  margin-right: -21px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #333;
+  border-bottom: 1px dotted #ddd;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #a71e32;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.navbar-inverse {
+  background: #a71e32 !important;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-size: 26px;
+}
+
+.navbar-right {
+  margin-right: 20px;
+}
+.navbar-right .txt-identity {
+  cursor: default;
+}
+.navbar-right .link-logout:hover, .navbar-right .link-modifypass:hover {
+  text-decoration: underline;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+
+#modal-newbranch table tr, #modal-setting table tr, #modal-toggle table tr {
+  height: 37px;
+}
+#modal-newbranch table td, #modal-setting table td, #modal-toggle table td {
+  position: relative;
+}
+#modal-newbranch table .btn-clear, #modal-setting table .btn-clear, #modal-toggle table .btn-clear {
+  position: absolute;
+  right: -90px;
+  top: 0;
+}
+
+#modal-setting .modal-dialog {
+  width: 420px !important;
+}
+#modal-setting .input-num {
+  width: 60px;
+}
+#modal-setting .ques label {
+  width: 45%;
+}
+#modal-setting .ques label:first-child {
+  margin-right: 10px;
+}
+#modal-setting .ques input {
+  display: inline-block;
+}
+
+#modal-newbranch .modal-dialog {
+  width: 400px !important;
+}
+
+#modal-detail .table-user {
+  width: 28%;
+}
+#modal-detail .table-exam {
+  width: 70%;
+}
+
+#modal-toggle table {
+  width: 80%;
+}
+#modal-toggle table td {
+  vertical-align: top;
+}
+
+#modal-resetpass p {
+  text-align: center;
+}
+#modal-resetpass p:first-child {
+  font-size: 20px;
+}
+
+#modal-newexam textarea {
+  width: 570px;
+  height: 140px;
+}
+#modal-newexam .btnbox {
+  margin-top: 10px;
+}
+#modal-newexam .btnbox label {
+  font-weight: normal;
+  margin-right: 15px;
+}
+#modal-newexam .btnbox label input {
+  margin-right: 10px;
+}
+#modal-newexam .ansbox {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+#modal-newexam .ansbox p {
+  margin-bottom: 0;
+}
+#modal-newexam .ansbox label {
+  width: 100%;
+  font-weight: normal;
+}
+#modal-newexam .ansbox label input {
+  margin-right: 10px;
+}
+#modal-newexam .ansbox label input[type="text"] {
+  display: inline;
+  width: 86%;
+}
+#modal-newexam .ansbox label .del {
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+}
+#modal-newexam .ansbox label .del:hover {
+  text-decoration: none;
+}
+
+.main .infobar {
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 9px 10px;
+}
+.main .infobar span {
+  margin-right: 20px;
+}
+.main .btn-box {
+  margin: 10px 0;
+}
+.main .btn-box .btn-newbranch {
+  padding: 6px 30px;
+}
+.main .infobar-sub {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 18px;
+  padding: 9px 0;
+  color: #333 !important;
+}
+.main .infobar-sub .dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #d9534f;
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+}
+.main .infobar-sub .dot-open {
+  background: #5cb85c;
+}
+.main .infobar-sub .infobar-detail {
+  padding: 0 10px;
+  text-align: left;
+  font-size: 14px;
+  color: #333 !important;
+}
+
+.main-branch .infobar {
+  color: #999;
+}
+
+.main .chapter-list {
+  border-right: 1px solid #ddd;
+  position: fixed;
+  top: 70px;
+  bottom: 0;
+  z-index: 1000;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  width: 250px;
+}
+.main .chapter-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+.main .chapter-list ul li {
+  line-height: 25px;
+}
+.main .chapter-list ul a {
+  color: #333;
+}
+.main .chapter-list ul a:hover {
+  color: #337ab7;
+}
+.main .chapter-list ul a.active {
+  color: #337ab7;
+  font-weight: bold;
+}
+.main .chapter-list .list-zero {
+  font-size: 18px;
+  font-weight: bold;
+}
+.main .chapter-list .list-zero > li {
+  margin-bottom: 10px;
+}
+.main .chapter-list .list-one {
+  padding-left: 18px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.main .chapter-list .list-one > li {
+  margin-bottom: 10px;
+}
+.main .chapter-list .list-two, .main .chapter-list .list-three {
+  font-size: 14px;
+  font-weight: normal;
+}
+.main .chapter-list .list-three {
+  padding-left: 20px;
+}
+.main .chapter-cont {
+  margin-left: 290px;
+}
+.main .chapter-cont h2 {
+  text-align: center;
+  font-size: 22px;
+}
+.main .chapter-cont h3 {
+  text-align: center;
+  font-size: 16px;
+}
+.main .chapter-cont p {
+  text-indent: 2em;
+}
+.main .chapter-cont-editor, .main .btn-save {
+  display: none;
+}
+.main .ke-container {
+  width: 100% !important;
+  margin-top: 20px !important;
+}
+.main .chanter-cont-info {
+  border-bottom: 1px solid #ddd;
+}
+.main .chanter-cont-info .chapter-num {
+  font-weight: bold;
+}
+.main .chanter-cont-info .chapter-info p:first-child span {
+  margin-right: 20px;
+}
+.main .chanter-cont-info .chapter-info .tip {
+  margin-left: 20px;
+}
+
+.main-examlist .chapter-list .list-one {
+  font-weight: normal;
+}
+.main-examlist .table-examlist tr a:first-child {
+  margin-right: 8px;
+}
+
+.main-appsetting .form-study {
+  margin-bottom: 20px;
+}
+.main-appsetting .uploadbox {
+  margin: 10px 0;
+}
+.main-appsetting .uploadbox .ui-upload {
+  margin-right: 20px;
+}
+
+.ui-upload {
+  width: 200px;
+  height: 110px;
+  border: 1px solid #b2b2b2;
+  background: #f5f5f5;
+  text-align: center;
+  line-height: 110px;
+  position: relative;
+  float: left;
+}
+
+.ui-upload input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 100;
+}
+
+.ui-upload-progress {
+  z-index: 50;
+  position: absolute;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  margin-top: -8px;
+  width: 80px;
+  margin-left: -40px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: none;
+}
+
+.ui-upload-progress span {
+  background: #333;
+  background: -webkit-linear-gradient(top, #666, #444);
+  background: linear-gradient(to bottom, #666, #444);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  -webkit-transition: width 300ms ease-in-out;
+  transition: width 300ms ease-in-out;
+}

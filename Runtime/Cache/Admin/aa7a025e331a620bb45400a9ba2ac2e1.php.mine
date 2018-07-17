@@ -1,0 +1,562 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>透明化</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link href="/Qh_tpc/public/admin/css/css.css" rel="stylesheet" type="text/css"/>	
+    <link href="/Qh_tpc/public/admin/css/table.css" rel="stylesheet" type="text/css"/>     
+    
+</head>
+<body >
+<header>
+<!-- 头部 -->
+<div class="header-BOX">
+	<div class="h-logo"><img src="/Qh_tpc/public/admin/image/h-logo.jpg"/></div>
+	<div class="h-con">
+		<div class="h-title">您当前的位置：
+		<?php if($titleName){ ?>
+		<span><?php echo $titleName;?></span>
+		<?php }else{ ?>
+		<span>????</span>
+		<?php } ?></div>
+		<ul class="h-nav">
+			<li class="options"></li>
+			<li class="sms"></li>
+			<li class="warning"></li>
+		</ul>
+	</div>
+</div>
+
+</header>
+
+<div class="mainBox">
+	<div class="menu">
+		<!-- 左侧目录 -->
+		
+	<div class="leftsidebar_box">
+		
+		<dl class="home">
+			<dt >财富中心</dt>
+			
+		</dl>
+	
+		<dl class="results-situation">
+			<dt >业绩情况</dt>
+			
+		</dl>
+		<dl class="receivable-situation">
+			<dt >回款情况</dt>
+			
+		</dl>
+		<dl class="project-situation">
+			<dt >项目情况</dt>
+		</dl>
+		
+		
+		<dl class="department-situation">
+			<dt >部门情况</dt>
+		</dl>
+		<!--<dl class="pro-details">
+			<dt >项目列表</dt>
+		</dl>
+		<dl class="pre_sale_list">
+			<dt >售前列表</dt>
+		</dl>-->
+		
+		<dl class="set-up">
+			<dt >其它设置<img src="/Qh_tpc/public/admin/image/select_xl01.png"></dt>
+			<dd class="target"><a href="set_target.html">业绩目标</a></dd>
+			<dd class="custom-Per-list"><a href="per_list.html">人员列表</a></dd>
+			<dd class="Pos-management"><a href="Pos_management.html">职位管理</a></dd>
+			<dd class="information"><a href="Information_added_import.html">补充导入</a></dd>
+		</dl>
+	</div>
+
+<script src="/Qh_tpc/public/admin/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<!-- 左侧目录 jq-->
+<script type="text/javascript">
+
+	$('.home dt').click(function(){
+		location.href = "index.html"
+	});
+	$('.results-situation dt').click(function(){
+		location.href = "results_project.html"
+	});
+	$('.receivable-situation dt').click(function(){
+		//location.href = "receivable.html"
+		location.href = "project.html"
+	});
+	$('.project-situation dt').click(function(){
+		location.href = "receivable_project.html"
+	});
+   $('.custom-pre-sale dt').click(function(){
+		location.href = "pre_sale_chart.html"
+	});
+     $('.department-situation dt').click(function(){
+		location.href = "department.html"
+	});
+  	$('.pro-details dt').click(function(){
+		location.href = "project.html"
+	});
+    $('.pre_sale_list dt').click(function(){
+		location.href = "pre_sale_list.html"
+	});
+	
+
+
+</script>
+
+
+	</div>
+	<div class="main">
+	   <div class="d-c-title">
+                <div class="d-c-square"></div>
+                <p>项目筛选</p>
+        </div>
+            <div class="selectNumberScreen">
+                <div class="hasBeenSelected">
+                    <dl>
+                      <dt>您已选择：</dt>
+                      <dd style="DISPLAY: none" class=clearDd>
+                      <div class=clearList></div>
+                      <div style="DISPLAY: none" class="eliminateCriteria" id='clear_all'>全部清除</div>
+                    </dl>
+                </div>
+                <div id="selectList" class="screenBox screenBackground">
+                    <!--<dl class="listIndex" attr="terminal_brand_s">
+                      <dt><span></span>类&nbsp;&nbsp;&nbsp;型：</dt>
+                      <dd><a href="javascript:void(0)" values="10x" attrval="基建">施工</a> 
+                      <a href="javascript:void(0)" values="10~50" attrval="更改">客运</a>
+                      <a href="javascript:void(0)" values="50~200" attrval="企业">货检</a> 
+                      <a href="javascript:void(0)" values="200~500" attrval="成本">旅服系统</a> 
+                      <a href="javascript:void(0)" values="500d" attrval="保价">售后</a> 
+                    </dl> -->
+                   <dl class="listIndex" id="ComRange" attr="价格范围">
+                      <dt><span></span>分公司：</dt>
+                      <dd><a href="javascript:void(0)" values="3" attrval="10万以下" type='Com'>北京分公司</a> 
+                      <a href="javascript:void(0)" values="4" attrval="10万-50万" type='Com'>上海分公司</a>
+                      <a href="javascript:void(0)" values="2" attrval="50万-200万" type='Com'>广州分公司</a>
+                      <a href="javascript:void(0)" values="1" attrval="200万-500万" type='Com'>沈阳分公司</a>
+                      <a href="javascript:void(0)" values="5" attrval="200万-500万" type='Com'>大连分公司</a>
+                    </dl>
+                     <dl class="listIndex" id="PriceRange" attr="价格范围">
+                      <dt><span></span>合同额：</dt>
+                      <dd><a href="javascript:void(0)" values="10x" attrval="10万以下" type='Price'>10万以下</a> 
+                      <a href="javascript:void(0)" values="10~50" attrval="10万-50万" type='Price'>10万-50万</a>
+                      <a href="javascript:void(0)" values="50~200" attrval="50万-200万" type='Price'>50万-200万</a>
+                      <a href="javascript:void(0)" values="200~500" attrval="200万-500万" type='Price'>200万-500万</a>
+                      <a href="javascript:void(0)" values="500d" attrval="500万以上" type='Price'>500万以上</a></dd>
+                    </dl>
+                    
+                    <dl class=" listIndex" attr="terminal_os_s">
+                      <dt><span></span>时&nbsp;&nbsp;&nbsp;间：</dt>
+                      <dd>
+                      <a href="javascript:void(0)" values2="" values1="" attrval="预计确认时间" id="data1" style="margin-left:20px;" type='time'>立项日期</a> 
+                      </dd>
+                    </dl> 
+                    <<div class="data1"><input type="text" id='start_time' class="date_picker7"><input type="text" id='stop_time' class="date_picker8"><input
+							type="button" onclick="exConfirm()" id='time_ok' value="确认" class="in02" /></div>   
+                   
+            </div>	
+	</div>
+     <!-- 项目列表 -->
+            <div class="d-c-title">
+                <div class="d-c-square"></div>
+                <p>项目列表</p>
+            </div>
+            <div class="pre-list-Sort">
+                <div class="pls-top">
+                    <div class="pls-top-left">
+                        <p style="font-weight:700;font-size:14px;">合计：</p>
+                        <!-- <p>合同总额：<span id="Camount"><?php echo $data['Camount_sum'];?></span></p> -->
+                        <p>回款总额：<span id="Pamount"><?php echo $data['payment_sum'];?></span></p>
+                        <p>应收款总额：<span id="Recei"><?php echo $data['yingshou'];?></span></p>
+                        <p>今年应收款总额：<span id="Recei_year"><?php echo $data['yingshou_year'];?></span></p>
+                        <!--<p>利润总额：<span>200,000,000</span></p>-->
+                    </div>
+                    <div class="pls-bootom-right">
+                        <p>共找到<span id="totalCount"><?php echo $total;?></span>条项目</p>
+                    </div>
+                </div>
+                <div class="pls-bootom">
+                    <ul>
+                        <li><a class="a01">默认排序</a></li>
+                        <li><a>立项日期</a></li>
+                        <li><a>合同额</a></li>
+                       <!--  <li><a>回款额</a></li>
+                        <li><a>进度</a></li>  -->
+                        <li style="margin-left:30px;color:#1a96d2;"><input type="checkbox" style="vertical-align:middle;margin-top:-4px;margin-right:10px;"/>只看有更新</li>
+                    </ul>
+                    <div class="Import-data-btn"><input type="button" value="导入数据" /></div>
+                </div>
+                         <!-- 导入数据 -->
+                          <div class="Id-Box">
+                                <div class="shelter"></div>
+                                <div class="Id-con-box">
+                                    <div class="pre-con-title">导入数数据</div>
+                                      <ul class="Id-con">
+                                          <li style="margin-top:20px;"><label>数据类型：</label><select id=select_type><option value=0>请选择数据类型</option><option value=1>合同额与回款</option></select></li>
+                                          <li style="margin-top:20px;">
+                                          <label style="float:left;">文件路径：</label>
+                                                <ul style="float:left;">
+                                                    <li><!-- <input type="file" placeholder="导入数据" class="in02"/> -->
+                                                      <div style="width:220px;height:40px;overflow:hidden;position:relative;border:1px solid #ccc;">
+                                                        <form method="post" action="<?php echo U('Admin/Project/project_excel');?>" enctype="multipart/form-data" id="import">
+                                                        <div style="float:left;"><input type="text" id="txt" name="txt" class="txt"/></div>
+                                                        <div style="float:left;"><div class="upload"></div></div>
+                                                        <div style="height:30px;float:left;"><input type="file" onchange="txt.value=this.value" class="file" name='file_stu' id='excel'/></div>
+                                                        </form>
+                                                      </div>
+                                                    </li>
+                                                  </ul>
+                                          </li>
+                                          <li style="margin-top:10px;padding-left:90px;"><input type="button" value="确定" class="b01" id='imp_data'/><input type="button" value="取消" class="b02"/></li>
+                                      </ul>       
+                                </div>
+                         </div>
+            </div>
+            <!-- 项目列表内容 -->
+            <ul class="pl-con">
+            <?php if(is_array($rows)): foreach($rows as $key=>$rows): ?><li id="<?php echo $rows['p_id'];?>" onclick="ProListInfo(this)">
+                   <div class="pl-con-left2"><div class="Focus-on"></div></div>
+                   <div class="pl-con-center">
+                    <p class="p01"><?php echo $rows['Jobname'];?></p>
+                    <p><a>立项：<?php echo $rows['Begindate'];?></a><!--<a>项目经理：马小俊</a>--></p>
+                    <p><a>立项编号：<?php echo $rows['Jobcode'];?></a><!--<a>项目进度：90%</a>--></p>
+
+                      
+                    <?php if(($rows['last_payment'] != '')): ?><p>最新回款：该项目于<?php echo $rows['last_payment']['p_time'];?>回款，回款金额：<?php echo $rows['last_payment']['p_money'];?></p><?php endif; ?>
+                    
+                    <p><!-- <span class="s01">旅服系统</span> --><span class="s02"><?php echo $rows['c_name'];?></span></p>
+
+                    
+
+                   </div> 
+                    <div class="pl-con-right">
+                        <!--<p style="margin-top:30px;">项目地点：清原站</p> -->
+                    </div>
+                   <div class="pl-con-right2">
+                        <p class="p01"><?php echo $rows['Camount'];?></p>
+                        <p style="margin-bottom:20px;">回款：<?php echo $rows['percent'];?> &nbsp;<?php echo $rows['Pamount'];?></p>  
+                        <p><span class="s01"></span><span class="s02"></span><span class="s03">3</span></p> 
+                   </div>
+                </li><?php endforeach; endif; ?>
+            </ul>
+</div>
+<script src="/Qh_tpc/public/admin/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="/Qh_tpc/public/admin/js/jquery-1.4.3.min.js" type="text/javascript"></script>
+<script src="/Qh_tpc/public/admin/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="/Qh_tpc/public/admin/js/jquery.date_input.pack.js"></script>
+
+<!-- 左侧目录 jq-->
+<script type="text/javascript">
+
+//提交ajax走数据
+function SubAjaxInfo(){
+	
+	$.ajax({  
+            url:"/Qh_tpc/index.php/Admin/Project/PostPoroject",  
+            type:"post",  
+            async:true,  
+            data:{'Camount':Price,'Com_id':Com,'Begindate':time},  
+            dataType:"json", 
+            error:function(){alert("服务加载出错");},  
+            success:function(data)  
+            {	
+          	
+          	if(!data['rows']){
+          		$(".pl-con").html("");
+				$("#Camount").html(0);
+          		$("#Pamount").html(0);
+          		$("#Recei").html(0);
+          		$("#Recei_year").html(0);
+          		$("#totalCount").html(0);
+          		exit;
+          	}else{
+          		
+          		
+          		var rows = data['rows'];
+          		
+          		//alert(data['Camount_sum']);
+          		
+          		$("#Camount").html(data['Camount_sum']);
+          		
+          		$("#Pamount").html(data['payment_sum']);
+          		
+          		$("#totalCount").html(data['total']);
+          		
+          		$("#Recei").html(data['yingshou']);
+          		
+          		$("#Recei_year").html(data['yingshou_year']);
+          		
+          		var html = "";
+          		
+          	    for(var i=0;i<rows.length;i++){
+          	    	if(rows[i]['last_payment']!=null){
+          	    		html += '<li id="'+rows[i]['p_id']+'" onclick="ProListInfo(this)"><div class="pl-con-left2"><div class="Focus-on"></div></div><div class="pl-con-center"><p class="p01">'+rows[i]['Jobname']+'</p><p><a>立项：'+rows[i]['Begindate']+'</a></p><p><a>立项编号：'+rows[i]['Jobcode']+'</a></p><p>最新回款：该项目于'+rows[i]['last_payment']['p_time']+'回款，回款金额：'+rows[i]['last_payment']['p_money']+'</p><p><span class="s02">'+rows[i]['c_name']+'</span></p></div><div class="pl-con-right"></div><div class="pl-con-right2"><p class="p01">'+rows[i]['Camount']+'</p><p style="margin-bottom:20px;">回款：'+rows[i]['percent']+'&nbsp;'+rows[i]['Pamount']+'</p><p><span class="s01"></span><span class="s02"></span><span class="s03">3</span></p></div></li>';	
+          	    	}else{
+          	    		html += '<li id="'+rows[i]['p_id']+'" onclick="ProListInfo(this)"><div class="pl-con-left2"><div class="Focus-on"></div></div><div class="pl-con-center"><p class="p01">'+rows[i]['Jobname']+'</p><p><a>立项：'+rows[i]['Begindate']+'</a></p><p><a>立项编号：'+rows[i]['Jobcode']+'</a></p><p><span class="s02">'+rows[i]['c_name']+'</span></p></div><div class="pl-con-right"></div><div class="pl-con-right2"><p class="p01">'+rows[i]['Camount']+'</p><p style="margin-bottom:20px;">回款：'+rows[i]['percent']+'&nbsp;'+rows[i]['Pamount']+'</p><p><span class="s01"></span><span class="s02"></span><span class="s03">3</span></p></div></li>';	
+          	    	}
+			    	//html += '<li id="'+rows[i]['p_id']+'" onclick="ProListInfo(this)"><div class="pl-con-left2"><div class="Focus-on"></div></div><div class="pl-con-center"><p class="p01">'+rows[i]['Jobname']+'</p><p><a>立项：'+rows[i]['Begindate']+'</a></p><p><a>立项编号：'+rows[i]['Jobcode']+'</a></p></div><div class="pl-con-right"></div><div class="pl-con-right2"><p class="p01">'+rows[i]['Camount']+'</p><p style="margin-bottom:20px;">回款：'+rows[i]['percent']+'&nbsp;'+rows[i]['Pamount']+'</p></div></li>';	
+          	    	//html += '<li><div class="pl-con-center"><p class="p01">'+rows[i]['p_name']+'</p><p><a>创建时间：'+rows[i]['c_time']+'</a><a>预计确认时间：<span style="color:red;width:80;font-weight:700;">'+rows[i]['c_ok_time']+'</span></a></p><p><a>跟踪负责人：'+rows[i]['name']+'</a><a>建设单位：'+rows[i]['str_c_name']+'</a></p><p>备注：'+rows[i]['str_remarks']+'</p></div> <div class="pl-con-right"><p style="margin-top:30px;">预计回款时间：'+rows[i]['c_ok_time']+'</p><p>成功率：'+rows[i]['c_success']+'</p><p><span class="s01">成本</span><span class="s02">'+rows[i]['c_name']+'</span></p></div><div class="pl-con-right2"><p class="p01">'+rows[i]['f_money']+'万</p><p style="margin-bottom:20px;">成功率后金额：'+rows[i]['s_success_money']+'万</p><p><span class="s01"></span><span class="s02"></span></p></div></li>';
+          	    }
+          	    $(".pl-con").html(html);
+          	}
+          }
+});	
+}
+
+
+$(".leftsidebar_box dt").css({"background-color":"#4f5051"});
+$(".leftsidebar_box dt img").attr("src","/Qh_tpc/public/admin/image/select_xl01.png");
+$(function(){
+    $('.main').css('min-height',$(window).height()-45);
+    $(".leftsidebar_box dd").hide();
+    $(".leftsidebar_box dt").click(function(){
+        $(".leftsidebar_box dt").css({"background-color":"#4f5051"})
+        $(".leftsidebar_box dt").css({"color":"white"})
+        $(this).css({"background-color": "#333"});
+        
+        $(this).parent().find('dd').removeClass("menu_chioce");
+        $(".leftsidebar_box dt img").attr("src","/Qh_tpc/public/admin/image/select_xl01.png");
+        $(this).parent().find('img').attr("src","/Qh_tpc/public/admin/image/select_xl.png");
+        $(".menu_chioce").slideUp(); 
+        $(this).parent().find('dd').slideToggle();
+        $(this).parent().find('dd').addClass("menu_chioce");
+    });
+});
+$(function(){
+$('.receivable-situation').find('dt').css('background-color','#333')
+});
+
+
+function ProListInfo(obj){
+	window.location.href = "/Qh_tpc/index.php/Admin/Project/project_details.html?pid="+$(obj).attr('id');
+}
+//金额
+var Price = '';
+
+//公司
+var Com = '';
+
+//时间
+var time='';
+
+
+$(function(){
+
+//监听金额
+$('#PriceRange dd a').click(function(){
+	Price = $(this).attr('values');
+	SubAjaxInfo();
+});
+	
+
+//监听公司
+$('#ComRange dd a').click(function(){
+	
+//	if(Com==''){
+//		$('#not_do').show();
+//	}
+	
+	Com = $(this).attr('values');
+	SubAjaxInfo();
+});
+
+//监听时间
+$('#time_ok').click(function(){
+	
+//	if(Com==''){
+//		$('#not_do').hide();
+//	}
+	
+	var start=$('#start_time').val();
+	var stop=$('#stop_time').val();
+	if(start==''){
+		alert('请选择开始时间');
+		exit;
+	}
+	if(stop!=''){
+		time=start +'~'+ stop;
+	}else{
+		time=start +'d';
+	}
+	SubAjaxInfo();
+	//alert(time);
+});
+
+//全部清除
+$('#clear_all').click(function(){
+	window.location.href=window.location.href;
+});
+	
+	
+	
+$('.custom').find('dt').css('background-color','#333')
+
+$('.date_picker7').date_input();
+$('.date_picker8').date_input();
+});
+ $('#data1').click(function(){
+
+      $('.data1').show();
+     
+    });
+</script>
+<!-- 筛选 -->
+<script>
+    var dlNum  =$("#selectList").find("dl");
+    for (i = 0; i < dlNum.length; i++) {
+        $(".hasBeenSelected .clearList").append("<div class=\"selectedInfor selectedShow\" style=\"display:none\"><label></label><em onclick='clear_one(this)'></em></div>");
+    }
+    
+    var refresh = "true";
+    
+    $(".listIndex a ").live("click",function(){
+        var text =$(this).text();
+        
+        var type=$(this).attr('type');  //加类型，用于清除某个筛选项时走ajax
+        
+        var selectedShow = $(".selectedShow");
+        var textTypeIndex =$(this).parents("dl").index();
+        var textType =$(this).parent("dd").siblings("dt").text();
+        index = textTypeIndex -(2);
+        $(".clearDd").show();
+        $(".selectedShow").eq(index).show();
+        $(this).addClass("selected").siblings().removeClass("selected");
+        selectedShow.eq(index).find("span").text(textType);
+        selectedShow.eq(index).find("label").text(text);
+        
+        selectedShow.eq(index).find("em").attr('type',type);//加类型，用于清除某个筛选项时走ajax
+        
+        var show = $(".selectedShow").length - $(".selectedShow:hidden").length;
+        if (show > 1) {
+            $(".eliminateCriteria").show();
+        }
+       
+    });
+    $(".selectedShow em").live("click",function(){
+        $(this).parents(".selectedShow").hide();
+        var textTypeIndex =$(this).parents(".selectedShow").index();
+        index = textTypeIndex;
+        $(".listIndex").eq(index).find("a").removeClass("selected");
+        
+        if($(".listIndex .selected").length < 2){
+            $(".eliminateCriteria").hide();
+             $('.data1').hide();
+        }
+    });
+    
+    $(".eliminateCriteria").live("click",function(){
+        $(".selectedShow").hide();
+        $('.data1').hide();
+        $(this).hide();
+        $(".listIndex a ").removeClass("selected");
+    }); 
+
+    $('.Import-data-btn input').click(function(){
+
+      $('.Id-Box').show();
+    });
+      $('.Id-con .b02').click(function(){
+
+      $('.Id-Box').hide();
+    });
+ 
+      
+//清除某一条
+function clear_one(obj){
+	var ty=$(obj).attr('type');
+    switch(ty){
+	    case 'Com' : Com='';break;
+	    case 'Price' : Price='';break;
+	    case 'time' : time='';break;
+    }
+    SubAjaxInfo();
+}            
+      
+      
+      
+ //导入数据     
+ $('#imp_data').click(function(){
+	 if($('#select_type').val()==0){
+		 alert('请选择数据类型');
+		 exit;
+	 }
+	 if($('#excel').val()==''){
+		 alert('请选择文件');
+		 exit;
+	 }
+	 
+	 $('#import').submit();
+	 //alert(0);
+ });
+ 
+ /*
+ //修改项目进度
+ <input type="hidden" id="updata_progress" value="<?php echo U('Admin/Project/updata_project_progress');?>"/>
+ $('#up_pro').click(function(){
+	 if($('#pro_speed').val()==''){
+		 alert('请填写项目进度');
+		 exit;
+	 }
+	 if($('#pro_remark').val()==''){
+		 alert('请填写备注');
+		 exit;
+	 }
+	 var url=$('#updata_progress').val();
+	 var p_speed=$('#pro_speed').val();
+	 var p_remark=$('#pro_remark').val();
+	 var info='p_speed='+p_speed+'&p_remark='+p_remark;
+	 $.post(url,info,function(data){
+		 if(data==2){
+			 alert('您所填写的进度不大于上次的进度，请重新填写！');
+		 }else if(data==0){
+			 alert('修改失败');
+		 }else if(data==1){
+			 alert('修改成功');
+		 }
+	 },'json');
+ });
+ 
+ //项目进度列表
+ <input type="hidden" id="progress_list" value="<?php echo U('Admin/Project/select_project_progress');?>"/>
+ var url_progress_list=$('#progress_list').val();
+ $.get(url_progress_list,function(data){
+	  var html = "";
+	  if(data!=null){
+		  for(var i=0;i<data.length;i++)
+	      {
+			  html +='<li ><div class="liwrap"><div class="lileft"><div class="date"><span class="year">'+data[i]['year']+'</span><span class="md">'+data[i]['month']+'</span></div></div><div class="point"><b></b></div><div class="liright"><div class="histt"><a>收到回款：'+data[i]['p_money']+'元</a></div><div class="hisct">'+data[i]['p_remark']+'</div></div></div></li>';
+	      }
+		  
+		  $("#pro_list").html(html);
+	  }
+	  
+ },'json');
+
+ 
+//人员所属de项目列表
+ <input type="hidden" id="userpro_list" value="<?php echo U('Admin/User/select_user_pro');?>"/>
+ var url_userlist=$('#userpro_list').val();
+ var user_id=$('#xxxx').val();
+ var info='user_id='+user_id;
+ $.post(url_progress_list,info,function(data){
+	  var html = "";
+	  if(data!=null){
+		  for(var i=0;i<data.length;i++)
+	      {
+			  html +='<li ><div class="liwrap"><div class="lileft"><div class="date"><span class="year">'+data[i]['year']+'</span><span class="md">'+data[i]['month']+'</span></div></div><div class="point"><b></b></div><div class="liright"><div class="histt"><a>收到回款：'+data[i]['p_money']+'元</a></div><div class="hisct">'+data[i]['p_remark']+'</div></div></div></li>';
+	      }
+		 
+		  $("#user_list").html(html);
+	  }
+	  
+ },'json');
+ 
+ */  
+ 
+</script>
+</body>
+</html>

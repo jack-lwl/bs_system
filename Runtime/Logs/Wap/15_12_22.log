@@ -1,0 +1,372 @@
+[ 2015-12-22T16:37:47+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: post:"stj7chpqjbjtkkk862l52nd8t6"
+[ 2015-12-22T16:37:47+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: uid:1001R81000000000012T
+[ 2015-12-22T16:37:47+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001523s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `u_member` [ RunTime:0.006809s ]
+SQL: SHOW COLUMNS FROM `p_projectinfo` [ RunTime:0.007253s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.006739s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.006044s ]
+SQL: SELECT * FROM `p_user` WHERE ( p_id = '10011610000000000J1T' and p_user_id = '1001R81000000000012T' and p_status = 0 ) LIMIT 1   [ RunTime:0.000856s ]
+ERR: Think\Model:getProHaveUserInfo方法不存在！
+
+[ 2015-12-22T16:38:37+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: post:"stj7chpqjbjtkkk862l52nd8t6"
+[ 2015-12-22T16:38:37+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: uid:1001R81000000000012T
+[ 2015-12-22T16:38:37+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003250s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `u_member` [ RunTime:0.006492s ]
+SQL: SHOW COLUMNS FROM `p_projectinfo` [ RunTime:0.007223s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.006428s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.005483s ]
+SQL: SELECT * FROM `p_user` WHERE ( p_id = '10011610000000000J1T' and p_user_id = '1001R81000000000012T' and p_status = 0 ) LIMIT 1   [ RunTime:0.001066s ]
+ERR: Think\Model:getProHaveUserInfo方法不存在！
+
+[ 2015-12-22T16:38:45+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: post:"stj7chpqjbjtkkk862l52nd8t6"
+[ 2015-12-22T16:38:45+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: uid:1001R81000000000012T
+[ 2015-12-22T16:38:45+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `u_member` [ RunTime:0.005170s ]
+SQL: SHOW COLUMNS FROM `p_projectinfo` [ RunTime:0.006514s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.006918s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.007014s ]
+SQL: SELECT * FROM `p_user` WHERE ( p_id = '10011610000000000J1T' and p_user_id = '1001R81000000000012T' and p_status = 0 ) LIMIT 1   [ RunTime:0.000869s ]
+ERR: Think\Model:getProHaveUserInfo方法不存在！
+
+[ 2015-12-22T16:39:43+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: post:"stj7chpqjbjtkkk862l52nd8t6"
+[ 2015-12-22T16:39:43+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: uid:1001R81000000000012T
+[ 2015-12-22T16:39:43+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002522s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `u_member` [ RunTime:0.009423s ]
+SQL: SHOW COLUMNS FROM `p_projectinfo` [ RunTime:0.013943s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.008999s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.011027s ]
+SQL: SELECT * FROM `p_user` WHERE ( p_id = '10011610000000000J1T' and p_user_id = '1001R81000000000012T' and p_status = 0 ) LIMIT 1   [ RunTime:0.001396s ]
+SQL: SHOW COLUMNS FROM p_user p [ RunTime:0.000325s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'p' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM p_user p
+SQL: SELECT u.Cuserid,u.user_name FROM p_user p INNER JOIN u_member u on p.p_user_id= u.Cuserid  WHERE ( p.p_id = '10011610000000000J1T' and p_status = 0 )  [ RunTime:0.001237s ]
+
+[ 2015-12-22T16:40:18+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: post:"stj7chpqjbjtkkk862l52nd8t6"
+[ 2015-12-22T16:40:18+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: uid:1001R81000000000012T
+[ 2015-12-22T16:40:18+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003336s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `u_member` [ RunTime:0.005889s ]
+SQL: SHOW COLUMNS FROM `p_projectinfo` [ RunTime:0.006237s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.006115s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.006779s ]
+SQL: SELECT * FROM `p_user` WHERE ( p_id = '10011610000000000J1T' and p_user_id = '1001R81000000000012T' and p_status = 0 ) LIMIT 1   [ RunTime:0.001096s ]
+SQL: SHOW COLUMNS FROM p_user p [ RunTime:0.000272s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'p' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM p_user p
+SQL: SELECT u.Cuserid,u.user_name FROM p_user p INNER JOIN u_member u on p.p_user_id= u.Cuserid  WHERE ( p.p_id = '10011610000000000J1T' and p_status = 0 )  [ RunTime:0.000747s ]
+
+[ 2015-12-22T16:40:28+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: post:"stj7chpqjbjtkkk862l52nd8t6"
+[ 2015-12-22T16:40:28+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: uid:1001R81000000000012T
+[ 2015-12-22T16:40:28+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `u_member` [ RunTime:0.006200s ]
+SQL: SHOW COLUMNS FROM `p_projectinfo` [ RunTime:0.007646s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.006367s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.007260s ]
+SQL: SELECT * FROM `p_user` WHERE ( p_id = '10011610000000000J1T' and p_user_id = '1001R81000000000012T' and p_status = 0 ) LIMIT 1   [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `u_postion` [ RunTime:0.006844s ]
+SQL: SELECT `postionId` FROM `u_postion` WHERE ( FIND_IN_SET(3,p_auth) )  [ RunTime:0.000789s ]
+SQL: SELECT `Cuserid` FROM `u_member` WHERE ( FIND_IN_SET(1,user_position) and Cuserid = '1001R81000000000012T' ) LIMIT 1   [ RunTime:0.000622s ]
+SQL: SELECT `Cuserid` FROM `u_member` WHERE ( FIND_IN_SET(6,user_position) and Cuserid = '1001R81000000000012T' ) LIMIT 1   [ RunTime:0.000706s ]
+SQL: SELECT `Cuserid` FROM `u_member` WHERE ( FIND_IN_SET(8,user_position) and Cuserid = '1001R81000000000012T' ) LIMIT 1   [ RunTime:0.000756s ]
+SQL: SELECT `Cuserid` FROM `u_member` WHERE ( FIND_IN_SET(14,user_position) and Cuserid = '1001R81000000000012T' ) LIMIT 1   [ RunTime:0.000425s ]
+SQL: SELECT `Cuserid` FROM `u_member` WHERE ( FIND_IN_SET(15,user_position) and Cuserid = '1001R81000000000012T' ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SELECT `Cuserid` FROM `u_member` WHERE ( FIND_IN_SET(16,user_position) and Cuserid = '1001R81000000000012T' ) LIMIT 1   [ RunTime:0.000552s ]
+
+[ 2015-12-22T16:41:34+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Public/AppLogin
+ERR: post:{"code":"\u97a0\u56fd","password":"123456"}
+[ 2015-12-22T16:41:34+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Public/AppLogin
+ERR: user信息:{"Cuserid":"1001R81000000000012K","user_code":"\u97a0\u56fd","user_name":"\u97a0\u56fd","user_password":"e10adc3949ba59abbe56e057f20f883e","dr":null,"user_position":"1","str_tel":"13644991821","openid":"8m52vnqrgcmbl251mvlbmt6vm3"}
+[ 2015-12-22T16:41:34+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Public/AppLogin
+ERR: uid:"1001R81000000000012K"
+[ 2015-12-22T16:41:34+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Public/AppLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001628s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `u_member` [ RunTime:0.005735s ]
+SQL: SHOW COLUMNS FROM `p_projectinfo` [ RunTime:0.005806s ]
+SQL: SELECT `Cuserid`,`user_code`,`user_name`,`user_password`,`dr`,`user_position`,`str_tel` FROM `u_member` WHERE ( user_code = '鞠国' ) LIMIT 1   [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `u_postion` [ RunTime:0.006403s ]
+SQL: SELECT `postionId` FROM `u_postion` WHERE ( FIND_IN_SET(14,p_auth) )  [ RunTime:0.000623s ]
+SQL: SELECT `Cuserid` FROM `u_member` WHERE ( FIND_IN_SET(1,user_position) and Cuserid = '1001R81000000000012K' ) LIMIT 1   [ RunTime:0.000337s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+
+[ 2015-12-22T16:41:35+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Project/getUserTheProAll
+ERR: post:"8m52vnqrgcmbl251mvlbmt6vm3"
+[ 2015-12-22T16:41:35+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Project/getUserTheProAll
+ERR: uid:1001R81000000000012K
+[ 2015-12-22T16:41:35+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Project/getUserTheProAll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.006062s ]
+SQL: SHOW COLUMNS FROM p_user pu [ RunTime:0.000291s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pu' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM p_user pu
+SQL: SELECT p.p_id,p.Jobname FROM p_user pu INNER JOIN p_projectinfo p on p.p_id = pu.p_id  WHERE ( p_user_id = '1001R81000000000012K' and pu.p_status = 0 )  [ RunTime:0.001296s ]
+
+[ 2015-12-22T16:41:39+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Project/getUserTheProAll
+ERR: post:"stj7chpqjbjtkkk862l52nd8t6"
+[ 2015-12-22T16:41:39+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Project/getUserTheProAll
+ERR: uid:1001R81000000000012T
+[ 2015-12-22T16:41:39+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Project/getUserTheProAll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001702s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.005476s ]
+SQL: SHOW COLUMNS FROM p_user pu [ RunTime:0.000643s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pu' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM p_user pu
+SQL: SELECT p.p_id,p.Jobname FROM p_user pu INNER JOIN p_projectinfo p on p.p_id = pu.p_id  WHERE ( p_user_id = '1001R81000000000012T' and pu.p_status = 0 )  [ RunTime:0.001503s ]
+
+[ 2015-12-22T16:41:51+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: post:"8m52vnqrgcmbl251mvlbmt6vm3"
+[ 2015-12-22T16:41:51+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: uid:1001R81000000000012K
+[ 2015-12-22T16:41:52+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002948s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `u_member` [ RunTime:0.007279s ]
+SQL: SHOW COLUMNS FROM `p_projectinfo` [ RunTime:0.006314s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.006566s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.006677s ]
+SQL: SELECT * FROM `p_user` WHERE ( p_id = '10011610000000001JI7' and p_user_id = '1001R81000000000012K' and p_status = 0 ) LIMIT 1   [ RunTime:0.001151s ]
+SQL: SHOW COLUMNS FROM p_user p [ RunTime:0.000653s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'p' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM p_user p
+SQL: SELECT u.Cuserid,u.user_name FROM p_user p INNER JOIN u_member u on p.p_user_id= u.Cuserid  WHERE ( p.p_id = '10011610000000001JI7' and p_status = 0 )  [ RunTime:0.001132s ]
+
+[ 2015-12-22T16:42:20+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Project/getSearchProName
+ERR: post:"8m52vnqrgcmbl251mvlbmt6vm3"
+[ 2015-12-22T16:42:20+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Project/getSearchProName
+ERR: uid:1001R81000000000012K
+[ 2015-12-22T16:42:20+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Project/getSearchProName
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.007152s ]
+SQL: SHOW COLUMNS FROM p_user pu [ RunTime:0.000501s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pu' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM p_user pu
+SQL: SELECT p.p_id,p.Jobname FROM p_user pu INNER JOIN p_projectinfo p on p.p_id = pu.p_id and pu.p_status = 0  WHERE `p_user_id` = '1001R81000000000012K' AND `Jobname` LIKE '%捞刀%'  [ RunTime:0.001502s ]
+
+[ 2015-12-22T16:42:42+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: post:"8m52vnqrgcmbl251mvlbmt6vm3"
+[ 2015-12-22T16:42:42+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: uid:1001R81000000000012K
+[ 2015-12-22T16:42:42+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `u_member` [ RunTime:0.007217s ]
+SQL: SHOW COLUMNS FROM `p_projectinfo` [ RunTime:0.006801s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.006218s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.006521s ]
+SQL: SELECT * FROM `p_user` WHERE ( p_id = '10011610000000000J1T' and p_user_id = '1001R81000000000012K' and p_status = 0 ) LIMIT 1   [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM p_user p [ RunTime:0.000281s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'p' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM p_user p
+SQL: SELECT u.Cuserid,u.user_name FROM p_user p INNER JOIN u_member u on p.p_user_id= u.Cuserid  WHERE ( p.p_id = '10011610000000000J1T' and p_status = 0 )  [ RunTime:0.001013s ]
+
+[ 2015-12-22T16:42:43+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: post:"8m52vnqrgcmbl251mvlbmt6vm3"
+[ 2015-12-22T16:42:43+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: uid:1001R81000000000012K
+[ 2015-12-22T16:42:43+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `u_member` [ RunTime:0.006722s ]
+SQL: SHOW COLUMNS FROM `p_projectinfo` [ RunTime:0.005101s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.006357s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.005812s ]
+SQL: SELECT * FROM `p_user` WHERE ( p_id = '10011610000000000J1T' and p_user_id = '1001R81000000000012K' and p_status = 0 ) LIMIT 1   [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `u_postion` [ RunTime:0.006266s ]
+SQL: SELECT `postionId` FROM `u_postion` WHERE ( FIND_IN_SET(3,p_auth) )  [ RunTime:0.000607s ]
+SQL: SELECT `Cuserid` FROM `u_member` WHERE ( FIND_IN_SET(1,user_position) and Cuserid = '1001R81000000000012K' ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM p_user p [ RunTime:0.000234s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'p' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM p_user p
+SQL: SELECT u.Cuserid,u.user_name FROM p_user p INNER JOIN u_member u on p.p_user_id= u.Cuserid  WHERE ( p.p_id = '10011610000000000J1T' and p_status = 0 )  [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `u_member` [ RunTime:0.005661s ]
+SQL: SELECT `Cuserid`,`user_name` FROM `u_member` WHERE ( Cuserid not in('1001R81000000000011W','1001R81000000000012K','1001R81000000000012T') )  [ RunTime:0.023666s ]
+
+[ 2015-12-22T16:43:09+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Materiel/WapSubSaveProUser
+ERR: post:"8m52vnqrgcmbl251mvlbmt6vm3"
+[ 2015-12-22T16:43:09+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Materiel/WapSubSaveProUser
+ERR: uid:1001R81000000000012K
+[ 2015-12-22T16:43:09+08:00 ] 192.168.50.26 /Qh_tpc/index.php/Wap/Materiel/WapSubSaveProUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002195s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.005953s ]
+SQL: UPDATE `p_user` SET `p_status`=1,`p_handle_user`='1001R81000000000012K',`P_handle_time`='15-12-22 16:43:09' WHERE `p_user_id` = '1001R81000000000012T' AND `p_id` = '10011610000000000J1T' [ RunTime:0.095342s ]
+
+[ 2015-12-22T16:43:27+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: post:"stj7chpqjbjtkkk862l52nd8t6"
+[ 2015-12-22T16:43:27+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: uid:1001R81000000000012T
+[ 2015-12-22T16:43:27+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `u_member` [ RunTime:0.006208s ]
+SQL: SHOW COLUMNS FROM `p_projectinfo` [ RunTime:0.005634s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.005729s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.005681s ]
+SQL: SELECT * FROM `p_user` WHERE ( p_id = '10011610000000000J1T' and p_user_id = '1001R81000000000012T' and p_status = 0 ) LIMIT 1   [ RunTime:0.000777s ]
+
+[ 2015-12-22T16:43:36+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: post:"stj7chpqjbjtkkk862l52nd8t6"
+[ 2015-12-22T16:43:36+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+ERR: uid:1001R81000000000012T
+[ 2015-12-22T16:43:36+08:00 ] 192.168.50.30 /Qh_tpc/index.php/Wap/Materiel/getWapProUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' E:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001525s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+NOTIC: [2] session_destroy() [<a href='function.session-destroy'>function.session-destroy</a>]: Trying to destroy uninitialized session E:\wamp\www\Qh_tpc\Application\Wap\Controller\BaseController.class.php 第 18 行.
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument E:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `u_member` [ RunTime:0.004827s ]
+SQL: SHOW COLUMNS FROM `p_projectinfo` [ RunTime:0.005604s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.005113s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.005974s ]
+SQL: SELECT * FROM `p_user` WHERE ( p_id = '10011610000000000J1T' and p_user_id = '1001R81000000000012T' and p_status = 0 ) LIMIT 1   [ RunTime:0.001085s ]
+

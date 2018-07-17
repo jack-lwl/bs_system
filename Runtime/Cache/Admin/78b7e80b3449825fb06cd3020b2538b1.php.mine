@@ -1,0 +1,792 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>透明化</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href="/Qh_tpc/public/admin/css/css.css" rel="stylesheet" type="text/css" />
+<link href="/Qh_tpc/public/admin/css/table.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+	<header>
+		<!-- 头部 -->
+		<div class="header-BOX">
+	<div class="h-logo"><img src="/Qh_tpc/public/admin/image/h-logo.jpg"/></div>
+	<div class="h-con">
+		<div class="h-title">您当前的位置：
+		<?php if($titleName){ ?>
+		<span><?php echo $titleName;?></span>
+		<?php }else{ ?>
+		<span>????</span>
+		<?php } ?></div>
+		<ul class="h-nav">
+			<li class="options"></li>
+			<li class="sms"></li>
+			<li class="warning"></li>
+		</ul>
+	</div>
+</div>
+
+	</header>
+
+	<div class="mainBox">
+		<div class="menu">
+			<!-- 左侧目录 -->
+			
+	<div class="leftsidebar_box">
+		
+		<dl class="home">
+			<dt >财富中心</dt>
+			
+		</dl>
+	
+		<dl class="results-situation">
+			<dt >业绩情况</dt>
+			
+		</dl>
+		<dl class="receivable-situation">
+			<dt >回款情况</dt>
+			
+		</dl>
+		<dl class="project-situation">
+			<dt >项目情况</dt>
+		</dl>
+		
+		
+		<dl class="department-situation">
+			<dt >部门情况</dt>
+		</dl>
+		<!--<dl class="pro-details">
+			<dt >项目列表</dt>
+		</dl>
+		<dl class="pre_sale_list">
+			<dt >售前列表</dt>
+		</dl>-->
+		
+		<dl class="set-up">
+			<dt >其它设置<img src="/Qh_tpc/public/admin/image/select_xl01.png"></dt>
+			<dd class="target"><a href="set_target.html">业绩目标</a></dd>
+			<dd class="custom-Per-list"><a href="per_list.html">人员列表</a></dd>
+			<dd class="Pos-management"><a href="Pos_management.html">职位管理</a></dd>
+			<dd class="information"><a href="Information_added_import.html">补充导入</a></dd>
+		</dl>
+	</div>
+
+<script src="/Qh_tpc/public/admin/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<!-- 左侧目录 jq-->
+<script type="text/javascript">
+
+	$('.home dt').click(function(){
+		location.href = "index.html"
+	});
+	$('.results-situation dt').click(function(){
+		location.href = "results_project.html"
+	});
+	$('.receivable-situation dt').click(function(){
+		//location.href = "receivable.html"
+		location.href = "project.html"
+	});
+	$('.project-situation dt').click(function(){
+		location.href = "receivable_project.html"
+	});
+   $('.custom-pre-sale dt').click(function(){
+		location.href = "pre_sale_chart.html"
+	});
+     $('.department-situation dt').click(function(){
+		location.href = "department.html"
+	});
+  	$('.pro-details dt').click(function(){
+		location.href = "project.html"
+	});
+    $('.pre_sale_list dt').click(function(){
+		location.href = "pre_sale_list.html"
+	});
+	
+
+
+</script>
+
+
+		</div>
+		<div class="main" style="padding: 10px;">
+		 <div class="d-c-title">
+                <div class="d-c-square"></div>
+                <p><?php echo $small_titleName;?></p>
+        </div>
+        <div class="p-p-box">
+           <a href="results_project.html" >正常项目<span>(<?php echo $total;?>)</span></a>
+           <a href="pre_sale_list.html" style="color:#1a96d2;border-bottom: 2px solid #1a96d2;cursor:pointer;text-decoration: none;">售前项目<span>(<?php echo $count;?>)</span></a> 
+        </div>
+			<div class="d-c-title">
+				<div class="d-c-square"></div>
+				<p>售前筛选</p>
+			</div>
+			<div class="selectNumberScreen">
+				<div class="hasBeenSelected">
+					<dl>
+						<dt>您已选择：</dt>
+						<dd style="DISPLAY: none" class=clearDd>
+							<div class=clearList></div>
+							<div style="DISPLAY: none" class="eliminateCriteria" id='clear_all'>清除筛选条件</div>
+					</dl>
+				</div>
+				<div id="selectList" class="screenBox screenBackground">
+					<dl class="listIndex" id="ComRange" attr="价格范围">
+                      <dt><span></span>分公司：</dt>
+                      <dd><a href="javascript:void(0)" values="3" attrval="10万以下" type='Com'>北京分公司</a> 
+                      <a href="javascript:void(0)" values="4" attrval="10万-50万" type='Com'>上海分公司</a>
+                      <a href="javascript:void(0)" values="2" attrval="50万-200万" type='Com'>广州分公司</a>
+                      <a href="javascript:void(0)" values="1" attrval="200万-500万" type='Com'>沈阳分公司</a>
+                      <a href="javascript:void(0)" values="5" attrval="200万-500万" type='Com'>大连分公司</a>
+                    </dl>
+                    <!-- 
+                    <dl class="listIndex" attr="terminal_brand_s">
+                      <dt><span></span>款&nbsp;&nbsp;&nbsp;源：</dt>
+                      <dd><a href="javascript:void(0)" values2="" values1="" attrval="">基建</a> 
+                      <a href="javascript:void(0)" values2="" values1="" attrval="">更改</a>
+                      <a href="javascript:void(0)" values2="" values1="" attrval="">企业</a> 
+                      <a href="javascript:void(0)" values2="" values1="" attrval="">成本</a> 
+                      <a href="javascript:void(0)" values2="" values1="" attrval="">保价</a> 
+                    </dl>  -->
+					<dl class="listIndex" id="PriceRange" attr="价格范围">
+						<dt>
+							<span></span>金&nbsp;&nbsp;&nbsp;额：
+						</dt>
+						<!--<dd><a href="<?php echo U('Admin/Project/pre_sale_list',array('f_money'=>'10x'));?>" values2="100000" values1="0" attrval="10万以下">10万以下</a>-->
+						<dd>
+							<a href="javascript:void(0)" values="10x" attrval="10万以下" type='Price'>10万以下</a>
+							<a href="javascript:void(0)" values="10~50" attrval="10万-50万" type='Price'>10万-50万</a>
+							<a href="javascript:void(0)" values="50~200" attrval="50万-200万" type='Price'>50万-200万</a>
+							<a href="javascript:void(0)" values="200~500" attrval="200万-500万" type='Price'>200万-500万</a>
+							<a href="javascript:void(0)" values="500d" attrval="500万以上" type='Price'>500万以上</a>
+						</dd>
+					</dl>
+					<dl class=" listIndex" attr="terminal_os_s">
+						<dt>
+							<span></span>时&nbsp;&nbsp;&nbsp;间：
+						</dt>
+						<dd>
+							<a href="javascript:void(0)" values2="" values1=""
+								attrval="预计确认时间" id="data1" type='time_queren'>预计确认时间</a> <a
+								href="javascript:void(0)" values2="" values1="" attrval="计划回款时间"
+								id="data2" type='time_huikuan'>计划回款时间</a> <a href="javascript:void(0)" values2=""
+								values1="" attrval="成功率" id="data3" type='Success'>成功率</a>
+						</dd>
+					</dl>
+					<div class="data1">
+						<input type="text" id="date_picker1" class="date_picker1"><input
+							type="text" id="date_picker2" class="date_picker2"><input
+							type="button" onclick="exConfirm()" value="确认" class="in02" />
+					</div>
+					<div class="data2">
+						<input type="text" id="date_picker3" class="date_picker3"><input
+							type="text" id="date_picker4" class="date_picker4"><input
+							type="button" onclick="planPayment()" value="确认" class="in02" />
+					</div>
+					<div class="data3">
+						<select id="SuccessSelect"><option>请选择</option>
+							<option value="10%">10%</option>
+							<option value="20%">20%</option>
+							<option value="30%">30%</option>
+							<option value="40%">40%</option>
+							<option value="50%">50%</option>
+							<option value="60%">60%</option>
+							<option value="70%">70%</option>
+							<option value="80%">80%</option>
+							<option value="90%">90%</option>
+							<option value="100%">100%</option></select>
+					</div>
+				</div>
+			</div>
+			<!-- 售前列表 -->
+			<div class="d-c-title">
+				<div class="d-c-square"></div>
+				<p>售前列表</p>
+			</div>
+			<div class="pre-list-Sort">
+				<div class="pls-top">
+					<div class="pls-top-left">
+						<p style="font-weight: 700; font-size: 14px;">合计：</p>
+						<p>
+							售前项目总金额：<span id="html_sum"><?php echo $sum;?></span>
+						</p>
+						<p>
+							总成功率后金额：<span id="html_succe_sum"><?php echo $succe_sum;?></span>
+						</p>
+					</div>
+					<div class="pls-top-right">
+						<input type="button" value="新建售前" id="pre-s-news" />
+						<input type="button"  sub-url="<?php echo U('Admin/SaleRecord/excel_sale_record');?>" onclick="exportData(this)" value="导出数据" />
+					</div>
+				</div>
+				<div class="pls-bootom">
+					<ul>
+						<li><a class="a01">默认排序</a></li>
+						<li><a>立项日期</a></li>
+						<li><a>回款时间</a></li>
+				<!-- 		<li><a>金额</a></li>
+						<li><a>进度</a></li>
+						<li><a>关注度</a></li> -->
+						<li style="margin-left:30px;color:#1a96d2;"><input type="checkbox" style="vertical-align:middle;margin-top:-4px;margin-right:10px;"/>只看有更新</li>
+					</ul>
+					<div class="pls-bootom-right">
+						<p>
+							共找到<span id="html_count"><?php echo $count;?></span>个售前项目
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- 列表内容 -->
+			<ul class="pl-con">
+				<?php if(is_array($rows)): foreach($rows as $key=>$rows): ?><li onclick="aaa(this)" n_id="<?php echo $rows['n_id'];?>" id="bbb" >
+					<!--<div class="pl-con-left"></div> -->
+					<div class="pl-con-center">
+						<p class="p01"><?php echo $rows['p_name'];?></p>
+						<p>
+							<a>创建时间：<?php echo $rows['c_time'];?></a><a>预计确认时间：<span
+								style="color: red; width: 80; font-weight: 700;"><?php echo $rows['c_ok_time'];?></span></a>
+						</p>
+						<p>
+							<a>跟踪负责人：<?php echo $rows['name'];?></a><a>建设单位：<?php echo $rows['str_c_name'];?></a>
+						</p>
+						<p>备注：<?php echo $rows['str_remarks'];?></p>
+					</div>
+					<div class="pl-con-right">
+						<p style="margin-top: 30px;">预计回款时间：<?php echo $rows['c_ok_time'];?></p>
+						<p>成功率：<?php echo $rows['c_success'];?></p>
+						<p>
+							<!--<span class="s01">成本</span>--> <span class="s02"><?php echo $rows['c_name'];?></span>
+						</p>
+					</div>
+					<div class="pl-con-right2">
+						<p class="p01"><?php echo $rows['f_money'];?>万</p>
+						<p style="margin-bottom: 20px;">成功率后金额：<?php echo $rows['s_success_money'];?>万</p>
+						<p>
+							<span class="s01"></span><span n_id="<?php echo $rows['n_id'];?>" class="s02" id='updata_sale'></span>
+						</p>
+					</div>
+
+				</li>
+				<div class="psl-record" id="ttt">
+					<div class="psl-record-con">
+						<p>这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容</p>
+						<label>2016-07-14 14:38</label>
+					</div>
+					<div class="psl-record-con">
+						<p>这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里</p>
+						<label>2016-07-14 14:38</label>
+					</div>
+					<div class="psl-record-con">
+						<p>这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里是记录的内容这里</p>
+						<label>2016-07-14 14:38</label>
+					</div>
+					
+				</div><?php endforeach; endif; ?>
+			</ul>
+			<!-- 新建售前 -->
+			<div class="new-preBox">
+				<div class="shelter"></div>
+				<div class="pre-con">
+					<div class="pre-con-title">新建售前</div>
+					<ul class="pc-con">
+						<li><label>项目名称：</label><input id="ProName" placeholder="请填写售前项目名称" /></li>
+						<li><label>预计确认时间：</label><input id="OktimeInput" type="text"
+							class="date_picker5" /></li>
+						<li><label>计划回款时间：</label><input id="PTimeInput" type="text"
+							class="date_picker6" /></li>
+						<li><label>金额：</label><input id="amountInput" placeholder="200,000,000" /></li>
+						<li><label>成功率：</label><span id="title">0</span>
+							<div class="scale_panel">
+								<div class="scale" onblur="ontest()" id="bar">
+									<div></div>
+									<span id="btn" ></span>
+								</div>
+							</div></li>
+						<li><label>计算成功率后金额：</label><input id="SMoneyInput" placeholder="1800,000,000" /></li>
+						<li><label>建设单位：</label><input id="ComInput" placeholder="请填写建设单位" /></li>
+						<li><label>跟踪负责人：</label><input id="personInput" placeholder="马小俊" /></li>
+						<li style="height: 80px; line-height: 80px;"><label
+							style="width: 8%;">备注：</label>
+						<textarea id="RemarkInput" placeholder="请填写备注信息"></textarea></li>
+						<li style="border: none; height: 70px;"><button id="add_sale">确认</button>
+							<button id="pre-s-esc">取消</button></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 编辑售前 -->
+			<div class="new-preBox2">
+				<div class="shelter"></div>
+				<div class="pre-con2">
+					<div class="pre-con-title">编辑售前</div>
+					<ul class="pc-con2">
+						<li><label>项目名称：</label><input id="ProName_up" placeholder="请填写售前项目名称" /></li>
+						<li><label>预计确认时间：</label><input id="OktimeInput_up" type="text"
+							class="date_picker5" /></li>
+						<li><label>计划回款时间：</label><input id="PTimeInput_up" type="text"
+							class="date_picker6" /></li>
+						<li><label>金额：</label><input id="amountInput_up" placeholder="180,000,000" /></li>
+						<li><label>成功率：</label><span id="title2_up">0</span>
+							<div class="scale_panel">
+								<div class="scale" onblur="ontest()" id="bar2">
+									<div></div>
+									<span id="btn2" ></span>
+								</div>
+							</div></li>
+						<li><label>计算成功率后金额：</label><input id="SMoneyInput_up" placeholder="1500,000,000" /></li>
+						<li><label>建设单位：</label><input id="ComInput_up" placeholder="请填写建设单位" /></li>
+						<li><label>跟踪负责人：</label><input id="personInput_up" placeholder="马小俊" /></li>
+						<input type='hidden' id='up_n_id'/>
+						<li style="height: 80px; line-height: 80px;"><label
+							style="width: 8%;">备注：</label>
+						<textarea id="RemarkInput_up" placeholder="请填写备注信息"></textarea></li>
+						<li style="border: none; height: 70px;"><button id='updata_ok'>确认</button>
+							<button id="pre-s-esc2">取消</button></li>
+					</ul>
+				</div>
+			</div>
+		
+
+		</div>
+		
+		<input type="hidden" id="add_sale_record" value="<?php echo U('Admin/SaleRecord/add_sale_record');?>"/>
+		
+		<input type="hidden" id="updata_sale_record" value="<?php echo U('Admin/SaleRecord/updata_sale_record');?>"/>
+		
+		<input type="hidden" id="url_fuzhi" value="<?php echo U('Admin/SaleRecord/select_one_sale_record');?>"/>
+		
+		<input type="hidden" id="url_record" value="<?php echo U('Admin/SaleRecord/select_sale_save_record');?>"/>
+		
+		
+		
+		<script src="/Qh_tpc/public/admin/js/jquery-1.10.1.min.js"
+			type="text/javascript"></script>
+		<script src="/Qh_tpc/public/admin/js/jquery-1.4.3.min.js"
+			type="text/javascript"></script>
+		<script src="/Qh_tpc/public/admin/js/jquery-1.8.3.min.js"
+			type="text/javascript"></script>
+		<script src="/Qh_tpc/public/admin/js/jquery.date_input.pack.js"></script>
+		<script src="/Qh_tpc/public/admin/js/pre_sale_list.js"></script>
+		<!-- 左侧目录 jq-->
+		<script type="text/javascript">
+
+//金额
+var Com = '';		
+//金额
+var Price = '';
+//确认时间
+var confirm = '';
+//回款时间
+var Payment = '';
+//成功率
+var Success = '';
+
+//预计确认开始时间
+var Picker1 = '';
+//预计确认结束时间
+var Picker2 = '';
+//计划回款开始时间
+var Picker3 = '';
+//计划回款结束时间
+var Picker4 = '';
+
+var time_queren='';
+
+var time_huiquan='';
+
+function ontest(){
+	alert('xx');
+}
+
+
+//提交ajax走数据
+function SubAjaxInfo(){
+	
+	$.ajax({  
+              url:"/Qh_tpc/index.php/Admin/Project/PostSaleInfo",  
+              type:"post",  
+              async:true,  
+              data:{'f_money':Price,'c_ok_time':time_queren,'c_rm_time':time_huiquan,'c_success':Success,'Com_id':Com},  
+              dataType:"json", 
+              error:function(){alert("服务加载出错");},  
+              success:function(data)  
+              {	
+            	
+            	if(!data['rows']){
+            		$(".pl-con").html("");
+					$("#html_sum").html(0);
+            		$("#html_succe_sum").html(0);
+            		$("#html_count").html(0);
+            		exit;
+            	}else{
+            		
+            		var rows = data['rows'];
+            		
+            		$("#html_sum").html(data['sum']);
+            		
+            		$("#html_succe_sum").html(data['succe_sum']);
+            		
+            		$("#html_count").html(data['count']);
+            		
+            		var html = "";
+            		
+            	    for(var i=0;i<rows.length;i++){
+			    		html += '<li><div class="pl-con-center"><p class="p01">'+rows[i]['p_name']+'</p><p><a>创建时间：'+rows[i]['c_time']+'</a><a>预计确认时间：<span style="color:red;width:80;font-weight:700;">'+rows[i]['c_ok_time']+'</span></a></p><p><a>跟踪负责人：'+rows[i]['name']+'</a><a>建设单位：'+rows[i]['str_c_name']+'</a></p><p>备注：'+rows[i]['str_remarks']+'</p></div> <div class="pl-con-right"><p style="margin-top:30px;">预计回款时间：'+rows[i]['c_ok_time']+'</p><p>成功率：'+rows[i]['c_success']+'</p><p><span class="s02">'+rows[i]['c_name']+'</span></p></div><div class="pl-con-right2"><p class="p01">'+rows[i]['f_money']+'万</p><p style="margin-bottom:20px;">成功率后金额：'+rows[i]['s_success_money']+'万</p><p><span class="s01"></span><span class="s02"></span></p></div></li>';
+
+            	    }
+            	    $(".pl-con").html(html);
+            	}
+            }
+  });
+	
+}
+
+//导出数据
+function exportData(obj){
+	window.location.href = $(obj).attr('sub-url')+"?f_money="+Price;
+}
+
+$(function(){
+	$('.results-situation').find('dt').css('background-color','#333')
+//监听金额
+$("#PriceRange a").click(function(){
+	Price = $(this).attr('values');
+	SubAjaxInfo();
+});
+//监听成功率
+$("#SuccessSelect").change(function(){
+	Success = $(this).val();
+	SubAjaxInfo();
+});
+
+//监听公司
+$('#ComRange dd a').click(function(){
+	
+	//if(Com==''){
+	//	$('#not_do').show();
+	//}
+	
+	Com = $(this).attr('values');
+	SubAjaxInfo();
+});
+
+
+
+	
+});
+//预计确认
+function exConfirm(){
+	Picker1 = $("#date_picker1").val();
+	Picker2 = $("#date_picker2").val();
+	
+	if(Picker1==''){
+		alert('请选择开始时间');
+		exit;
+	}
+	if(Picker2!=''){
+		time_queren=Picker1 +'~'+ Picker2;
+	}else{
+		time_queren=Picker1 +'d';
+	}
+	SubAjaxInfo();
+	
+}
+//计划回款
+function planPayment(){
+	Picker3 = $("#date_picker3").val();
+	Picker4 = $("#date_picker4").val();
+	
+	if(Picker3==''){
+		alert('请选择开始时间');
+		exit;
+	}
+	if(Picker4!=''){
+		time_huiquan=Picker3 +'~'+ Picker4;
+	}else{
+		time_huikuan=Picker3 +'d';
+	}
+	SubAjaxInfo();
+}
+
+//提交售前
+function addSaleRecordInfo(){
+	
+	var ProName = $("#ProName").val();
+		
+	var OktimeInput = $("#OktimeInput").val();
+
+	var PTimeInput = $("#PTimeInput").val();
+
+	var amountInput = $("#amountInput").val();
+
+	var SMoneyInput = $("#SMoneyInput").val();
+
+	var ComInput = $("#ComInput").val();
+
+	var personInput = $("#personInput").val();
+	
+	var RemarkInput = $("#RemarkInput").val();
+	
+	
+	
+	
+	
+}
+
+
+
+
+$(".leftsidebar_box dt").css({"background-color":"#4f5051"});
+$(".leftsidebar_box dt img").attr("src","/Qh_tpc/public/admin/image/select_xl01.png");
+$(function(){
+	
+	
+	$('#title').bind('contentchanged', function() { 
+		// do something after the div content has changed 
+		alert('woo'); 
+	}); 
+	
+    $('.main').css('min-height',$(window).height()-45);
+    $(".leftsidebar_box dd").hide();
+    $(".leftsidebar_box dt").click(function(){
+        $(".leftsidebar_box dt").css({"background-color":"#4f5051"})
+        $(".leftsidebar_box dt").css({"color":"white"})
+        $(this).css({"background-color": "#333"});
+        
+        $(this).parent().find('dd').removeClass("menu_chioce");
+        $(".leftsidebar_box dt img").attr("src","/Qh_tpc/public/admin/image/select_xl01.png");
+        $(this).parent().find('img').attr("src","/Qh_tpc/public/admin/image/select_xl.png");
+        $(".menu_chioce").slideUp(); 
+        $(this).parent().find('dd').slideToggle();
+        $(this).parent().find('dd').addClass("menu_chioce");
+    });
+});
+$(function(){
+$('.custom').find('dt').css('background-color','#333')
+$('.details-con').css('min-height',$(window).height()-60);
+
+});
+
+$('.date_picker1').date_input();
+$('.date_picker2').date_input();
+$('.date_picker3').date_input();
+$('.date_picker4').date_input();
+$('.date_picker5').date_input();
+$('.date_picker6').date_input();
+
+
+  $('#data1').click(function(){
+
+      $('.data1').show();
+       $('.data2').hide();
+        $('.data3').hide();
+    });
+  $('#data2').click(function(){
+
+      $('.data2').show();
+      $('.data1').hide();
+      $('.data3').hide();
+    });
+  $('#data3').click(function(){
+
+      $('.data3').show();
+      $('.data1').hide();
+      $('.data2').hide();
+    });
+</script>
+		<!-- 筛选 -->
+		<script>
+    var dlNum  =$("#selectList").find("dl");
+    for (i = 0; i < dlNum.length; i++) {
+        $(".hasBeenSelected .clearList").append("<div class=\"selectedInfor selectedShow\" style=\"display:none\"><label></label><em onclick='clear_one(this)'></em></div>");
+    }
+    
+    var refresh = "true";
+    
+    $(".listIndex a ").live("click",function(){
+        var text =$(this).text();
+        
+        var type=$(this).attr('type');  //加类型，用于清除某个筛选项时走ajax
+        
+        var selectedShow = $(".selectedShow");
+        var textTypeIndex =$(this).parents("dl").index();
+        var textType =$(this).parent("dd").siblings("dt").text();
+        index = textTypeIndex -(2);
+        $(".clearDd").show();
+        $(".selectedShow").eq(index).show();
+        $(this).addClass("selected").siblings().removeClass("selected");
+        selectedShow.eq(index).find("span").text(textType);
+        selectedShow.eq(index).find("label").text(text);
+        
+        selectedShow.eq(index).find("em").attr('type',type);//加类型，用于清除某个筛选项时走ajax
+        
+        var show = $(".selectedShow").length - $(".selectedShow:hidden").length;
+        if (show > 1) {
+            $(".eliminateCriteria").show();
+        }
+       
+    });
+    $(".selectedShow em").live("click",function(){
+        $(this).parents(".selectedShow").hide();
+        var textTypeIndex =$(this).parents(".selectedShow").index();
+        index = textTypeIndex;
+        $(".listIndex").eq(index).find("a").removeClass("selected");
+        
+        if($(".listIndex .selected").length < 2){
+            $(".eliminateCriteria").hide();
+        }
+    });
+    
+    $(".eliminateCriteria").live("click",function(){
+        $(".selectedShow").hide();
+        $('.data1').hide();
+        $('.data2').hide();
+        $('.data3').hide();
+        $(this).hide();
+        $(".listIndex a ").removeClass("selected");
+    }); 
+    
+    
+  //全部清除
+    $('#clear_all').click(function(){
+    	window.location.href=window.location.href;
+    });
+  
+//清除某一条
+function clear_one(obj){
+	var ty=$(obj).attr('type');
+    switch(ty){
+	    case 'Com' : Com='';break;
+	    case 'Price' : Price='';break;
+	    case 'Success' : Success='';break;
+	    case 'time_queren' : time_queren='';break;
+	    case 'time_huikuan' : time_huikuan='';break;
+    }
+    SubAjaxInfo();
+}      
+  
+  
+</script>
+		<script>
+
+//ajax 数据
+
+
+
+scale=function (btn,bar,title){
+    this.btn=document.getElementById(btn);
+    this.bar=document.getElementById(bar);
+    this.title=document.getElementById(title);
+    this.step=this.bar.getElementsByTagName("DIV")[0];
+    this.init();
+};
+scale.prototype={
+    init:function (){
+        var f=this,g=document,b=window,m=Math;
+        f.btn.onmousedown=function (e){
+            var x=(e||b.event).clientX;
+            var l=this.offsetLeft;
+            var max=f.bar.offsetWidth-this.offsetWidth;
+            g.onmousemove=function (e){
+                var thisX=(e||b.event).clientX;
+                var to=m.min(max,m.max(-2,l+(thisX-x)));
+                f.btn.style.left=to+'px';
+                f.ondrag(m.round(m.max(0,to/max)*100),to);
+                b.getSelection ? b.getSelection().removeAllRanges() : g.selection.empty();
+            };
+            g.onmouseup=new Function('this.onmousemove=null');
+        };
+    },
+    ondrag:function (pos,x){
+        this.step.style.width=Math.max(0,x)+'px';
+        this.title.innerHTML=pos+'%';
+    }
+}
+new scale('btn','bar','title');
+new scale('btn2','bar2','title2');
+
+$('#pre-s-news').click(function(){
+
+    $('.new-preBox').show();
+
+
+});
+
+/*
+$('.pl-con-right2 .s02').click(function(){
+ $('.new-preBox2').show();
+ 	$(this).attr('ccc',1);
+     
+});
+*/
+
+$('#pre-s-esc').click(function(){
+
+    $('.new-preBox').hide();
+});
+
+$('#pre-s-esc2').click(function(){
+
+    $('.new-preBox2').hide();
+});
+
+
+
+function aaa(obj){
+	
+	 if($(obj).find('.pl-con-right2 .s02').attr('ccc')==1)
+
+    	{
+			$(obj).next('#ttt').hide();
+
+			$(obj).find('.pl-con-right2 .s02').attr('ccc',0);
+			exit;
+    	}
+	 
+	 
+	 $(obj).addClass('check');
+		
+		$(obj).next('#ttt').toggle(600); 
+		
+		$('li:not(.check)').next('#ttt').hide();
+		
+		$(obj).removeClass();
+	 
+	 var n_id=$(obj).attr('n_id');
+	 //alert(n_id);
+	 var url=$('#url_record').val();
+	 var info="n_id="+n_id;
+	 var html='';
+	 //<div class="psl-record-con"><p>容内容</p><label>2016-07-14 14:38</label></div>
+	 $.post(url,info,function(data){
+		 if(data==null){
+			 alert('该项目暂无修改记录');
+			 $(obj).next('#ttt').hide(); 
+		 }else{
+			 for(var i=0;i<data.length;i++)
+		      {
+				 
+				 if(data[i]['c_success']='0000'){   //只改了金额
+					 html+='<div class="psl-record-con"><p>金额修改为:'+data[i]['f_money']+'&nbsp;&nbsp;修改备注:'+data[i]['str_remarks']+'</p><label>'+data[i]['s_time']+'</label></div>';
+				 }else if(data[i]['f_money']='0000'){   //只改了成功率
+					 html+='<div class="psl-record-con"><p>成功率修改为:'+data[i]['f_success']+'</p><p>修改备注:'+data[i]['str_remarks']+'</p><label>'+data[i]['s_time']+'</label></div>';
+				 }else{  //改了成功率和金额
+					 html+='<div class="psl-record-con"><p>成功率修改为:'+data[i]['f_success']+';金额修改为:'+data[i]['f_money']+'</p><p>修改备注:'+data[i]['str_remarks']+'</p><label>'+data[i]['s_time']+'</label></div>';
+				 }
+				 
+				 $("#ttt").html(html);
+		      }
+			
+		 } 
+	 },'json');
+    
+	
+		
+};
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 分页按钮 -->
+<div class="footer">
+  <ul class="pagination" id="pagination0"></ul>
+</div>
+
+
+<script src="/__PUBLIC__/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="/__PUBLIC__/js/jqPaginator.min.js" type="text/javascript"></script>
+
+
+
+<script>
+
+
+var if_firstime = true;                 //分页组件第一次加载为true，后面false
+
+/* 
+    分页组件展示 
+    total_pages: 总页数；
+    visible_pages： 让组件展示5页；
+    current_page: 当前页
+*/
+function display_pages(total_pages, visible_pages, current_page){
+    if(!visible_pages){
+        visible_pages = 5;
+    }
+    if(!current_page){
+        current_page = 1;
+    }
+
+    $.jqPaginator('#pagination0', {
+        totalPages: total_pages,
+        visiblePages: visible_pages,
+        currentPage: current_page,
+        prev: '<li class="prev"><a href="javascript:;">上一页</a></li>',
+        next: '<li class="next"><a href="javascript:;">下一页</a></li>',
+        page: '<li class="page"><a href="javascript:;">{{page}}</a></li>',
+        onPageChange: function (page, type) {
+            // alert(type + '：' + page);
+            if(if_firstime){
+                if_firstime = false;
+            }else if(!if_firstime){
+                changePage(page);
+            }
+            
+        }
+    });
+}
+
+display_pages(10);
+</script>
+
+
+
+</body>
+</html>

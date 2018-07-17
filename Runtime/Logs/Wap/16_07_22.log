@@ -1,0 +1,72 @@
+[ 2016-07-22T10:53:20+08:00 ] 58.83.244.40 /Qh_tpc/index.php/Wap/Public/AppLogin
+ERR: post:{"code":"\u97a0\u56fd","password":"123456"}
+[ 2016-07-22T10:53:35+08:00 ] 58.83.244.40 /Qh_tpc/index.php/Wap/Public/AppLogin
+ERR: post:{"code":"\u97a0\u56fd","password":"123456"}
+[ 2016-07-22T10:53:41+08:00 ] 58.83.244.40 /Qh_tpc/index.php/Wap/Public/AppLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' D:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php ç¬¬ 3 è¡Œ.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument D:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php ç¬¬ 39 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+ (trying to connect via tcp://192.168.40.120:3306) D:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+ D:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+
+[ 2016-07-22T10:53:51+08:00 ] 58.83.244.40 /Qh_tpc/index.php/Wap/Public/AppLogin
+ERR: post:{"code":"\u97a0\u56fd","password":"123456"}
+[ 2016-07-22T10:53:57+08:00 ] 58.83.244.40 /Qh_tpc/index.php/Wap/Public/AppLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' D:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php ç¬¬ 3 è¡Œ.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument D:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php ç¬¬ 39 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+ (trying to connect via tcp://192.168.40.120:3306) D:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+ D:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+
+[ 2016-07-22T10:54:12+08:00 ] 58.83.244.40 /Qh_tpc/index.php/Wap/Public/AppLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' D:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php ç¬¬ 3 è¡Œ.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument D:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php ç¬¬ 39 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+ (trying to connect via tcp://192.168.40.120:3306) D:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+ D:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+
+[ 2016-07-22T10:54:17+08:00 ] 58.83.244.40 /Qh_tpc/index.php/Wap/Public/AppLogin
+ERR: post:{"code":"\u9a6c\u4fca","password":"123456"}
+[ 2016-07-22T10:54:38+08:00 ] 58.83.244.40 /Qh_tpc/index.php/Wap/Public/AppLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' D:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php ç¬¬ 3 è¡Œ.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2] mkdir() [<a href='function.mkdir'>function.mkdir</a>]: Invalid argument D:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Log\Driver\File.class.php ç¬¬ 39 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+ (trying to connect via tcp://192.168.40.120:3306) D:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+ D:\wamp\www\Qh_tpc\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓĞÕıÈ·´ğ¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓĞ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+

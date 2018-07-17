@@ -1,0 +1,18 @@
+[ 2016-07-28T09:43:07+08:00 ] 58.83.244.40 /Qh_tpc/index.php/Wap/Public/AppLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' D:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+
+[ 2016-07-28T10:00:10+08:00 ] 58.83.244.40 /Qh_tpc/index.php/Wap/Public/AppLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] Use of undefined constant Xt - assumed 'Xt' D:\wamp\www\Qh_tpc\Application\Wap\Conf\config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+
